@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/myCss.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/1-timer.html">Timer</a></li>
+          <li><a href="/2-form.html">Form</a></li>
+          <li><a href="/2-snackbar.html">Promises</a></li>
+          <li><a href="/3-search.html">Search</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-box">
+      <div class="card">
+        <h1>Feedback form</h1>
+
+        <form class="feedback-form form-min" autocomplete="off">
+          <label>
+            Email
+            <input type="email" name="email" autofocus />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="8"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <script type="module" src="/src/js/2-form.js"></script>
+  </body>
+</html>

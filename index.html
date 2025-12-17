@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/myCss.css" />
+    <title>Bookshop</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/1-timer.html">Timer</a></li>
+          <li><a href="/2-form.html">Form</a></li>
+          <li><a href="/2-snackbar.html">Promises</a></li>
+          <li><a href="/3-search.html">Search</a></li>
+        </ul>
+      </nav>
+      <div class="logo"></div>
+      <div class="cart-button">
+        <a href="#cart" class="button">Кошик</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </header>
+
+    <main>
+      <h1 class="TitleName">BOOKSHOP</h1>
+
+      <section class="hero">
+        <h2>Welcome to bookshop</h2>
+        <h3>New and used books</h3>
+        <p>
+          From applied literature to educational resources, we have a lot of
+          textbooks to offer you.
+        </p>
+        <a href="#lab8" class="button">Lab 8 tasks</a>
+      </section>
+
+      <section class="news">
+        <h2>Latest news</h2>
+        <div class="news-grid">
+          <article class="news-item">
+            <img src="/public/Images/Book1.avif" alt="Book News" />
+            <p>May 21, 2024 at 12:01 pm</p>
+            <h3>Check out what's new: BOOK NEWS</h3>
+          </article>
+          <article class="news-item">
+            <img
+              src="/public/Images/Book2.jfif"
+              alt="Perfect for your Book Club"
+            />
+            <p>May 21, 2024 at 12:02 pm</p>
+            <h3>The Midnight Library - Perfect for your Book Club</h3>
+          </article>
+          <article class="news-item">
+            <img src="/public/Images/book3.jfif" alt="New Arrivals" />
+            <p>May 21, 2024 at 12:03 pm</p>
+            <h3>New Arrivals: It Ends With Us, Fourth Wing, and more</h3>
+          </article>
+        </div>
+        <a href="#lab8" class="button">View All Posts</a>
+      </section>
+
+      <section class="lab8" id="lab8">
+        <h2 class="lab-title">LAB 8</h2>
+        <div class="lab-links">
+          <a class="lab-link" href="/1-timer.html">Timer</a>
+          <a class="lab-link" href="/2-form.html">Form</a>
+          <a class="lab-link" href="/2-snackbar.html">Promises</a>
+          <a class="lab-link" href="/3-search.html">Image search</a>
+        </div>
+      </section>
+
+      <section class="news" id="cart">
+        <h2>Cart + Pagination</h2>
+        <div id="products" class="news-grid"></div>
+
+        <div class="cart-box">
+          <h3>Cart</h3>
+          <ul id="cartList" class="cart-list"></ul>
+          <div class="pager">
+            <button id="prevPage" type="button">Prev</button>
+            <span id="pageInfo">1/1</span>
+            <button id="nextPage" type="button">Next</button>
+            <button id="clearCart" type="button">Clear</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2>Gallery (basicLightbox)</h2>
+        <ul class="gallery" id="gallery"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="about-us">
+          <h3>About us</h3>
+          <p>
+            Bookshop is a place where you can find both new and used books on
+            various topics and genres.
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/3-search.html">Search</a></li>
+            <li><a href="/2-form.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <h3>Gallery</h3>
+          <p>Check out photos of our best-selling books and reading spaces.</p>
+        </div>
+        <div class="newsletter">
+          <h3>News on Email</h3>
+          <p>
+            Subscribe to our newsletter to stay updated on the latest arrivals
+            and offers.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/cart.js"></script>
+    <script type="module" src="/src/js/gallery.js"></script>
+  </body>
+</html>
