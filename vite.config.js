@@ -1,11 +1,9 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
-export default defineConfig({
-	base: "/IS-32_LAB7_KYRYCHENKO-NAZAR/",
-	define: {
-		global: "globalThis",
-	},
+export default defineConfig(({ mode }) => ({
+	base: mode === "production" ? "/IS-32_LAB7_KYRYCHENKO-NAZAR/" : "/",
+	define: { global: "globalThis" },
 	build: {
 		rollupOptions: {
 			input: {
@@ -17,4 +15,4 @@ export default defineConfig({
 			},
 		},
 	},
-});
+}));
